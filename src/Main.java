@@ -128,17 +128,17 @@ public class Main {
         elev2.afisezaElevDiriginte();
         elev3.afisezaElevDiriginte();
 
-        Inotator inotator1 = new Inotator();
-        Maratonist maratonist1 = new Maratonist();
+        Inotator inotator1 = new Inotator("400m spate", "Romania");
+        Maratonist maratonist1 = new Maratonist("42km", "Franta");
         inotator1.seAntreneaza();
         maratonist1.seAntreneaza();
         inotator1.seOdihneste();
         maratonist1.seOdihneste();
 
         Tableta tableta1 = new Tableta();
-        Smartphone smartphone1 = new Smartphone();
-        SmartPhoneIOS smartPhoneIOS1 = new SmartPhoneIOS();
-        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid();
+        Smartphone smartphone1 = new Smartphone("Samsung","350 euro");
+        SmartPhoneIOS smartPhoneIOS1 = new SmartPhoneIOS("Apple","900 euro");
+        SmartphoneAndroid smartphoneAndroid1 = new SmartphoneAndroid("Xiaomi", "200 euro");
 
 
         tableta1.porneste();
@@ -147,6 +147,9 @@ public class Main {
         smartphoneAndroid1.seOpreste();
         smartPhoneIOS1.porneste();
         smartphoneAndroid1.seOpreste();
+
+        inotator1.seOdihneste();
+        inotator1.ceTaraReprezinta();
 
 
     }

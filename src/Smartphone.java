@@ -1,5 +1,6 @@
 public class Smartphone extends Device{
-    private String marca = "No name";
+    public String marca = "No name";
+    public String pret="500 euro";
     @Override
     void porneste() {
         System.out.println("Telefonul porneste");
@@ -8,5 +9,10 @@ public class Smartphone extends Device{
     @Override
     public void seOpreste() {
         super.seOpreste();
+    }
+
+    public Smartphone(String marca, String pret) {
+        this.marca = marca;
+        this.pret = pret;
     }
 }
