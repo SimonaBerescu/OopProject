@@ -1,6 +1,6 @@
 public class Smartphone extends Device{
-    public String marca = "No name";
-    public String pret="500 euro";
+    protected String marca = "No name";
+    protected String pret="500 euro";
     @Override
     void porneste() {
         System.out.println("Telefonul porneste");
